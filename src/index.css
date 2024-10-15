@@ -1,0 +1,39 @@
+/* index.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+html, body {
+  height: 100%; /* Ensures full height for flexbox layout */
+  margin: 0; /* Removes default margin */
+}
+
+body {
+  background-color: #1a1a1a; /* Dark background */
+  color: #f0f0f0; /* Light text color */
+  font-family: 'Roboto', sans-serif; /* Use the imported font */
+}
+
+/* Ensures the root element occupies the full height */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure the footer is always at the bottom */
+}
+
+/* Additional styling for common elements (optional) */
+h1 {
+  font-size: 2.5rem; /* Adjust heading size as needed */
+  font-weight: 700; /* Bold heading */
+}
+
+footer {
+  margin-top: auto; /* Pushes footer to the bottom */
+  padding: 1.5rem; /* Padding for footer */
+}
